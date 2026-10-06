@@ -19,6 +19,7 @@ targets:
       properties:
         CFBundleDisplayName: Смена
         ShiftLogAPIBaseURL: $(SHIFTLOG_API_URL)
+        ShiftLogInitialDate: $(SHIFTLOG_INITIAL_DATE)
         UILaunchScreen: {}
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false

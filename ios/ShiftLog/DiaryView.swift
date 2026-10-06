@@ -2,7 +2,7 @@ import SwiftUI
 
 struct DiaryView: View {
     @AppStorage("serverURL") private var serverURL = AppConfiguration.defaultServerURL
-    @State private var date = Date()
+    @State private var date = AppConfiguration.initialDate
     @StateObject private var model = DiaryModel()
     private var day: Day? { model.day }
     private var loading: Bool { model.loading }

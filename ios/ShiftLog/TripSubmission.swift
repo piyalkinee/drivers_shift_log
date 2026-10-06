@@ -30,6 +30,10 @@ final class TripSubmission: ObservableObject {
 
     func submit(_ trip: Trip, serverURL: String) async -> Bool {
         guard !saving, !recoveryFailed else { return false }
+        guard pending != nil || AppConfiguration.isValid(serverURL) else {
+            error = "Укажите корректный адрес сервера в настройках подключения."
+            return false
+        }
         saving = true
         error = nil
         defer { saving = false }

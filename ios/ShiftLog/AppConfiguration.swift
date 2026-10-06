@@ -4,6 +4,20 @@ enum AppConfiguration {
     static var defaultServerURL: String {
         Bundle.main.object(forInfoDictionaryKey: "ShiftLogAPIBaseURL") as? String ?? ""
     }
+    static var initialDate: Date {
+        initialDate(from: Bundle.main.object(forInfoDictionaryKey: "ShiftLogInitialDate") as? String)
+    }
+    static func initialDate(from value: String?, now: Date = Date()) -> Date {
+        guard let value else { return now }
+        let formatter = DateFormatter()
+        formatter.calendar = LocalDay.calendar
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        formatter.timeZone = LocalDay.zone
+        formatter.dateFormat = "yyyy-MM-dd"
+        formatter.isLenient = false
+        guard let date = formatter.date(from: value), LocalDay.key(date) == value else { return now }
+        return date
+    }
     static func normalized(_ text: String) -> String {
         var text = text.trimmingCharacters(in: .whitespacesAndNewlines)
         if text.hasSuffix("/") { text.removeLast() }

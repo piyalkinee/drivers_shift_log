@@ -70,3 +70,16 @@ func TestDistinctIDsAndInvalidAdd(t *testing.T) {
 		t.Fatal("wrong count")
 	}
 }
+
+func TestDeliveredExamples(t *testing.T) {
+	s, err := Open("../../testdata/trips.json")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if got := s.Day("2026-10-01").Summary; got != (Summary{2, 3900, 585, 3315, 1500, 2400}) {
+		t.Fatalf("unexpected assignment example: %+v", got)
+	}
+	if got := s.Day("2026-10-02").Summary; got != (Summary{3, 9100, 1365, 7735, 1800, 7300}) {
+		t.Fatalf("unexpected second example day: %+v", got)
+	}
+}

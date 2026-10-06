@@ -80,6 +80,59 @@ final class StateTests: XCTestCase {
         XCTAssertNil(model.error)
         XCTAssertEqual(model.day?.date, day.date)
     }
+    func testSecondSubmitWhileSendingDoesNotCreateAnotherRequest() async {
+        let suite = "ShiftLogTests.\(UUID())"
+        let defaults = UserDefaults(suiteName: suite)!
+        defer { defaults.removePersistentDomain(forName: suite) }
+        let started = expectation(description: "First send started")
+        var continuation: CheckedContinuation<Void, Never>?
+        var sends = 0
+        let model = TripSubmission(defaults: defaults) { _, _ in
+            sends += 1
+            await withCheckedContinuation { value in continuation = value; started.fulfill() }
+        }
+        let original = trip()
+        let first = Task { await model.submit(original, serverURL: "https://shift.test") }
+        await fulfillment(of: [started], timeout: 2)
+        XCTAssertTrue(model.saving)
+        var other = original; other.id = "another-id"
+        let second = await model.submit(other, serverURL: "https://shift.test")
+        XCTAssertFalse(second)
+        XCTAssertEqual(model.pending?.trip, original)
+        continuation?.resume()
+        let success = await first.value
+        XCTAssertTrue(success)
+        XCTAssertEqual(sends, 1)
+        XCTAssertFalse(model.saving)
+        XCTAssertNil(model.pending)
+    }
+    func testMissingServerDoesNotCreateAnUnretryableOutboxEntry() async {
+        let suite = "ShiftLogTests.\(UUID())"
+        let defaults = UserDefaults(suiteName: suite)!
+        defer { defaults.removePersistentDomain(forName: suite) }
+        var sends = 0
+        let model = TripSubmission(defaults: defaults) { _, server in
+            sends += 1
+            XCTAssertEqual(server, "https://shift.test")
+        }
+        let rejected = await model.submit(trip(), serverURL: "")
+        XCTAssertFalse(rejected)
+        XCTAssertNil(model.pending)
+        XCTAssertNotNil(model.error)
+        XCTAssertNil(TripSubmission(defaults: defaults).pending)
+        let success = await model.submit(trip(), serverURL: "https://shift.test")
+        XCTAssertTrue(success)
+        XCTAssertEqual(sends, 1)
+        XCTAssertNil(model.error)
+    }
+    func testInitialDateSupportsExamplesAndFallsBackToToday() {
+        let now = Date(timeIntervalSince1970: 100)
+        let initial = AppConfiguration.initialDate(from: "2026-10-01", now: now)
+        XCTAssertEqual(LocalDay.key(initial), "2026-10-01")
+        for value in [nil, "", "2026-02-30", "2026-1-01", "invalid"] {
+            XCTAssertEqual(AppConfiguration.initialDate(from: value, now: now), now)
+        }
+    }
     func testServerConfiguration() {
         for url in ["https://api.example.org", "http://192.168.1.1:8080", " http://mac.local:8080/ "] {
             XCTAssertTrue(AppConfiguration.isValid(url), url)

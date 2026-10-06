@@ -29,6 +29,8 @@
 	<string>Подключение к локальному серверу дневника смен.</string>
 	<key>ShiftLogAPIBaseURL</key>
 	<string>$(SHIFTLOG_API_URL)</string>
+	<key>ShiftLogInitialDate</key>
+	<string>$(SHIFTLOG_INITIAL_DATE)</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 cd "$(dirname "$0")/.."
-if curl --silent --fail http://127.0.0.1:18080/health >/dev/null; then
+if curl --silent --fail --max-time 2 http://127.0.0.1:18080/health >/dev/null; then
     echo 'Port 18080 is already serving an API; stop it before running isolated UI tests.' >&2
     exit 1
 fi
@@ -17,10 +17,10 @@ ADDR=127.0.0.1:18080 DATA_FILE="$fixture_dir/trips.json" "$fixture_dir/server" >
 server_pid=$!
 for attempt in {1..30}; do
     kill -0 "$server_pid" 2>/dev/null || { cat "$fixture_dir/server.log"; exit 1; }
-    if curl --silent --fail http://127.0.0.1:18080/health >/dev/null; then break; fi
+    if curl --silent --fail --max-time 2 http://127.0.0.1:18080/health >/dev/null; then break; fi
     sleep 0.2
 done
-curl --silent --fail http://127.0.0.1:18080/health >/dev/null
+curl --silent --fail --max-time 2 http://127.0.0.1:18080/health >/dev/null
 if [ -z "${IOS_DESTINATION:-}" ]; then
     simulator_id=$(xcrun simctl list devices available -j | python3 -c 'import json,sys; d=json.load(sys.stdin); print(next(v["udid"] for k,vs in d["devices"].items() if "iOS" in k for v in vs if "iPhone" in v["name"]))')
     IOS_DESTINATION="platform=iOS Simulator,id=$simulator_id"

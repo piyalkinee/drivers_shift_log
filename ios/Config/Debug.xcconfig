@@ -1,4 +1,5 @@
 // Override in Local.xcconfig or in the connection screen.
 SLASH = /
 SHIFTLOG_API_URL = http:$(SLASH)/localhost:8080
+SHIFTLOG_INITIAL_DATE = 2026-10-01
 #include? "Local.xcconfig"
