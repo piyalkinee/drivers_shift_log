@@ -1,0 +1,4 @@
+// Override in Local.xcconfig or in the connection screen.
+SLASH = /
+SHIFTLOG_API_URL = http:$(SLASH)/localhost:8080
+#include? "Local.xcconfig"

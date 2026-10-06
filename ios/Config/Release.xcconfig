@@ -1,0 +1,3 @@
+// A release installation asks for a server address on first launch.
+SHIFTLOG_API_URL =
+#include? "Local.xcconfig"

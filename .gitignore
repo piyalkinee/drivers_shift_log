@@ -1,0 +1,10 @@
+.DS_Store
+.build/
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+/backend/data/
+ios/Config/Local.xcconfig
+*.xcresult/
+coverage.out

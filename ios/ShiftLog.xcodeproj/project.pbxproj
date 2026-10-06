@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DD4C2359542BDE06A90EC3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D051ED40BE2F0A80FDD867 /* Assets.xcassets */; };
+		1BAED343AF500229015557FE /* AddTripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D87A51ED2EA18530F21B73 /* AddTripView.swift */; };
+		52894B4699EB9511D7E626B4 /* ShiftLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C9C7F9B39E4F54761957E5 /* ShiftLogTests.swift */; };
+		634602C21464077C0E7AE542 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7700ECBC554758C2905D1F7B /* DiaryModel.swift */; };
+		8009EE099EDFF72D6D96DE2C /* StateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014DAA1F464EE55E3E835B10 /* StateTests.swift */; };
+		8EF5817B058E622124535FC6 /* DiaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8946E3D43A20CE9403640366 /* DiaryView.swift */; };
+		ADF1308DDFAA49A7E9705421 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DE257A6A2C821D1BE0EF49 /* APITests.swift */; };
+		B65817DD067506C7EEF37FB7 /* ShiftLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E370A6E862BA54CA2FB2A00 /* ShiftLogApp.swift */; };
+		D3FE3375F5115B8E4483D8B2 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96DC2EF2A2AD9E9801FAECC3 /* AppConfiguration.swift */; };
+		DE9039493CADB70A9B1FC5C7 /* TripSubmission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F45F98218230A1FBA6288D /* TripSubmission.swift */; };
+		EEE56E39F88D54494FB54CFE /* DiaryFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D158F0A9DD4BCD64A6F091CA /* DiaryFlowTests.swift */; };
+		FD4E57BE0F0A6C365EABB3E7 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41D56C4ED00E264A4BD5786 /* Models.swift */; };
+		FE22F5B47F2B4A9A9756FD06 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541F0E19ABCD42FCC00664FB /* API.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23B5BDE314AC40CB4BB6EBB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68434EB9C3B573BC23F1ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F45FC13847E82EDEE724A81;
+			remoteInfo = ShiftLog;
+		};
+		D1FACEBB148DAC8DC5DFE58D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F68434EB9C3B573BC23F1ADB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F45FC13847E82EDEE724A81;
+			remoteInfo = ShiftLog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		014DAA1F464EE55E3E835B10 /* StateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTests.swift; sourceTree = "<group>"; };
+		01F45F98218230A1FBA6288D /* TripSubmission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripSubmission.swift; sourceTree = "<group>"; };
+		03D87A51ED2EA18530F21B73 /* AddTripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripView.swift; sourceTree = "<group>"; };
+		0956DCA269EEB18EE10E40B4 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		15D051ED40BE2F0A80FDD867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		251298284159882446012D53 /* ShiftLog.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ShiftLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541F0E19ABCD42FCC00664FB /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7700ECBC554758C2905D1F7B /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		83C9C7F9B39E4F54761957E5 /* ShiftLogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftLogTests.swift; sourceTree = "<group>"; };
+		8455BB750F713FE962D19990 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		8946E3D43A20CE9403640366 /* DiaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryView.swift; sourceTree = "<group>"; };
+		8E370A6E862BA54CA2FB2A00 /* ShiftLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiftLogApp.swift; sourceTree = "<group>"; };
+		96DC2EF2A2AD9E9801FAECC3 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		A79962147EB2E52B92C95C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A886146DC001FE0B14EFEC57 /* ShiftLogUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ShiftLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D158F0A9DD4BCD64A6F091CA /* DiaryFlowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryFlowTests.swift; sourceTree = "<group>"; };
+		EBACCA5AB352D84DE27922E2 /* ShiftLogTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ShiftLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41D56C4ED00E264A4BD5786 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		F7DE257A6A2C821D1BE0EF49 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0271D362F401C198F0537115 /* ShiftLogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D158F0A9DD4BCD64A6F091CA /* DiaryFlowTests.swift */,
+			);
+			path = ShiftLogUITests;
+			sourceTree = "<group>";
+		};
+		113BDE861B02BACD1ACDDF39 /* ShiftLogTests */ = {
+			isa = PBXGroup;
+			children = (
+				F7DE257A6A2C821D1BE0EF49 /* APITests.swift */,
+				83C9C7F9B39E4F54761957E5 /* ShiftLogTests.swift */,
+				014DAA1F464EE55E3E835B10 /* StateTests.swift */,
+			);
+			path = ShiftLogTests;
+			sourceTree = "<group>";
+		};
+		24CA9E4DCCC036D8933FD016 = {
+			isa = PBXGroup;
+			children = (
+				81EF9DED1653DEEF8D375BF8 /* Config */,
+				93AD4C60DF3861F2FC2CFFA3 /* ShiftLog */,
+				113BDE861B02BACD1ACDDF39 /* ShiftLogTests */,
+				0271D362F401C198F0537115 /* ShiftLogUITests */,
+				55D73441FFB73700C5B1B645 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55D73441FFB73700C5B1B645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				251298284159882446012D53 /* ShiftLog.app */,
+				EBACCA5AB352D84DE27922E2 /* ShiftLogTests.xctest */,
+				A886146DC001FE0B14EFEC57 /* ShiftLogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81EF9DED1653DEEF8D375BF8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8455BB750F713FE962D19990 /* Debug.xcconfig */,
+				0956DCA269EEB18EE10E40B4 /* Release.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		93AD4C60DF3861F2FC2CFFA3 /* ShiftLog */ = {
+			isa = PBXGroup;
+			children = (
+				03D87A51ED2EA18530F21B73 /* AddTripView.swift */,
+				541F0E19ABCD42FCC00664FB /* API.swift */,
+				96DC2EF2A2AD9E9801FAECC3 /* AppConfiguration.swift */,
+				15D051ED40BE2F0A80FDD867 /* Assets.xcassets */,
+				7700ECBC554758C2905D1F7B /* DiaryModel.swift */,
+				8946E3D43A20CE9403640366 /* DiaryView.swift */,
+				A79962147EB2E52B92C95C49 /* Info.plist */,
+				F41D56C4ED00E264A4BD5786 /* Models.swift */,
+				8E370A6E862BA54CA2FB2A00 /* ShiftLogApp.swift */,
+				01F45F98218230A1FBA6288D /* TripSubmission.swift */,
+			);
+			path = ShiftLog;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		398A910D735239E090B758BF /* ShiftLogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2EE1ED9FA597EEB0092B2F /* Build configuration list for PBXNativeTarget "ShiftLogTests" */;
+			buildPhases = (
+				A72A1277160A2F54C4E1711B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDEB86960174033C7D500315 /* PBXTargetDependency */,
+			);
+			name = ShiftLogTests;
+			packageProductDependencies = (
+			);
+			productName = ShiftLogTests;
+			productReference = EBACCA5AB352D84DE27922E2 /* ShiftLogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F45FC13847E82EDEE724A81 /* ShiftLog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B31ED26FDC1042953E755313 /* Build configuration list for PBXNativeTarget "ShiftLog" */;
+			buildPhases = (
+				EFC0A75D83D4E712E5F0ED9C /* Sources */,
+				522858FE31F1F4A1F075AF35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShiftLog;
+			packageProductDependencies = (
+			);
+			productName = ShiftLog;
+			productReference = 251298284159882446012D53 /* ShiftLog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B816FC810E414D455B4D48ED /* ShiftLogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F2D81553A24AB8FF73E79169 /* Build configuration list for PBXNativeTarget "ShiftLogUITests" */;
+			buildPhases = (
+				28B57A254F7D6DB8C986B4E5 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B4FB0819C37E3B814DDDBF5 /* PBXTargetDependency */,
+			);
+			name = ShiftLogUITests;
+			packageProductDependencies = (
+			);
+			productName = ShiftLogUITests;
+			productReference = A886146DC001FE0B14EFEC57 /* ShiftLogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F68434EB9C3B573BC23F1ADB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B816FC810E414D455B4D48ED = {
+						TestTargetID = 9F45FC13847E82EDEE724A81;
+					};
+				};
+			};
+			buildConfigurationList = 7BDA99A48BA6F7662959C70F /* Build configuration list for PBXProject "ShiftLog" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 24CA9E4DCCC036D8933FD016;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 55D73441FFB73700C5B1B645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F45FC13847E82EDEE724A81 /* ShiftLog */,
+				398A910D735239E090B758BF /* ShiftLogTests */,
+				B816FC810E414D455B4D48ED /* ShiftLogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		522858FE31F1F4A1F075AF35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DD4C2359542BDE06A90EC3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28B57A254F7D6DB8C986B4E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE56E39F88D54494FB54CFE /* DiaryFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A72A1277160A2F54C4E1711B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF1308DDFAA49A7E9705421 /* APITests.swift in Sources */,
+				52894B4699EB9511D7E626B4 /* ShiftLogTests.swift in Sources */,
+				8009EE099EDFF72D6D96DE2C /* StateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC0A75D83D4E712E5F0ED9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE22F5B47F2B4A9A9756FD06 /* API.swift in Sources */,
+				1BAED343AF500229015557FE /* AddTripView.swift in Sources */,
+				D3FE3375F5115B8E4483D8B2 /* AppConfiguration.swift in Sources */,
+				634602C21464077C0E7AE542 /* DiaryModel.swift in Sources */,
+				8EF5817B058E622124535FC6 /* DiaryView.swift in Sources */,
+				FD4E57BE0F0A6C365EABB3E7 /* Models.swift in Sources */,
+				B65817DD067506C7EEF37FB7 /* ShiftLogApp.swift in Sources */,
+				DE9039493CADB70A9B1FC5C7 /* TripSubmission.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B4FB0819C37E3B814DDDBF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F45FC13847E82EDEE724A81 /* ShiftLog */;
+			targetProxy = 23B5BDE314AC40CB4BB6EBB6 /* PBXContainerItemProxy */;
+		};
+		DDEB86960174033C7D500315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F45FC13847E82EDEE724A81 /* ShiftLog */;
+			targetProxy = D1FACEBB148DAC8DC5DFE58D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C59B9D2282F2A9C3543A7AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ShiftLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.shiftlog.ShiftLog;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3373E6047DF0FC13A5704687 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8455BB750F713FE962D19990 /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		563D4D81CED8B7866D29DC29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.shiftlog.ShiftLogUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShiftLog;
+			};
+			name = Debug;
+		};
+		5CCA11E93A28B04F5DCA6D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.shiftlog.ShiftLogTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftLog.app/ShiftLog";
+			};
+			name = Debug;
+		};
+		6F1C44FAD7306AC9984D9334 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0956DCA269EEB18EE10E40B4 /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		99ABF0502A53CCB1BA601AA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ShiftLog/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.shiftlog.ShiftLog;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B06D11AE5E358441308C6434 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.shiftlog.ShiftLogUITests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShiftLog;
+			};
+			name = Release;
+		};
+		B5A7D6EA4CF7BB797D7D29C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kz.shiftlog.ShiftLogTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShiftLog.app/ShiftLog";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BDA99A48BA6F7662959C70F /* Build configuration list for PBXProject "ShiftLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3373E6047DF0FC13A5704687 /* Debug */,
+				6F1C44FAD7306AC9984D9334 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B31ED26FDC1042953E755313 /* Build configuration list for PBXNativeTarget "ShiftLog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99ABF0502A53CCB1BA601AA0 /* Debug */,
+				2C59B9D2282F2A9C3543A7AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BE2EE1ED9FA597EEB0092B2F /* Build configuration list for PBXNativeTarget "ShiftLogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CCA11E93A28B04F5DCA6D12 /* Debug */,
+				B5A7D6EA4CF7BB797D7D29C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F2D81553A24AB8FF73E79169 /* Build configuration list for PBXNativeTarget "ShiftLogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				563D4D81CED8B7866D29DC29 /* Debug */,
+				B06D11AE5E358441308C6434 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F68434EB9C3B573BC23F1ADB /* Project object */;
+}
